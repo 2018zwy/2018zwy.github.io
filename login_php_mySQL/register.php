@@ -16,7 +16,7 @@ if($link)
         if($name==""||$password1=="")//判断是否填写
         {
           echo"<script type="."\""."text/javascript"."\"".">"."window.alert"."("."\""."请填写完成！"."\"".")".";"."</script>";
-          echo"<script type="."\""."text/javascript"."\"".">"."window.location="."\""."http://127.0.0.1:8080/json/register1.php"."\""."</script>";    
+          echo"<script type="."\""."text/javascript"."\"".">"."window.location="."\""."http://127.0.0.1:8080/login/register1.html"."\""."</script>";    
           exit;
         }
         if($password1==$password2)//确认密码是否正确
@@ -29,7 +29,7 @@ if($link)
         {
          
         echo"<script type="."\""."text/javascript"."\"".">"."window.alert"."("."\""."该用户名已被注册"."\"".")".";"."</script>";
-        echo"<script type="."\""."text/javascript"."\"".">"."window.location="."\""."http://127.0.0.1:8080/json/register1.php"."\""."</script>";   
+        echo"<script type="."\""."text/javascript"."\"".">"."window.location="."\""."http://127.0.0.1:8080/login/register1.html"."\""."</script>";   
         exit; 
         }
          
@@ -43,13 +43,13 @@ if($link)
         {
           //echo"数据库关闭";
           echo"注册成功！";
-          echo"<script type="."\""."text/javascript"."\"".">"."window.location="."\""."http://127.0.0.1:8080/json/return.php"."\""."</script>";    
+          echo"<script type="."\""."text/javascript"."\"".">"."window.location="."\""."http://127.0.0.1:8080/login/return.html"."\""."</script>";    
         }
         }
         else
         {
           echo"<script type="."\""."text/javascript"."\"".">"."window.alert"."("."\""."密码不一致！"."\"".")".";"."</script>";
-          echo"<script type="."\""."text/javascript"."\"".">"."window.location="."\""."http://127.0.0.1:8080/json/register1.php"."\""."</script>";    
+          echo"<script type="."\""."text/javascript"."\"".">"."window.location="."\""."http://127.0.0.1:8080/login/register1.html"."\""."</script>";    
         }
       }
     }
